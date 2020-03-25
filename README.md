@@ -30,4 +30,11 @@
 - These features were input into Logistic Regression and Random Forest Classifier Models to determine their significance in predicting whether a given area would be considered a Food Desert by the USDA.
 
 #### Features Identified
-- ![](Assets/Baseline Model.PNG)
+
+Food Desert  | No        |  Yes
+------------ | --------  | -------- :
+Population   | 4285.78   | 4126.080
+
+
+
+![](Assets/Baseline Model.PNG)
