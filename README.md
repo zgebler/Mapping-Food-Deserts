@@ -1,6 +1,8 @@
 # Mapping-Food-Deserts
 
 ## Overview
+- ML project currently intended to be run in a series of Jupyter Notebooks
+- 
 
 ### Background
 "Limited access to supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food may make it harder for some Americans to eat a healthy diet. There are many ways to measure food store access for individuals and for neighborhoods, and many ways to define which areas are food deserts—neighborhoods that lack healthy food sources." - USDA Website
@@ -29,7 +31,7 @@
 - This was accomplished by looking at features within the dataset that did not rely on the mapping and distance calculation work done by the USDA, instead focusing on Socioeconomic and demographic features that would give an understanding of the communities that are described by the data.
 - These features were input into Logistic Regression and Random Forest Classifier Models to determine their significance in predicting whether a given area would be considered a Food Desert by the USDA.
 
-#### Features Identified by Census Tract
+#### Baseline Model, Features and population statistics
 
 Feature (Avg)| Food Desert| Not Food Desert
 ------------ | ---------  | --------:
@@ -47,6 +49,3 @@ Hispanic pop.| 970.795 | 571.520
 White pop.  | 2504.144 | 3314.017
 
 
-
-
-![](Assets/Baseline Model.PNG)
