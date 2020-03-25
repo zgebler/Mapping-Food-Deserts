@@ -31,10 +31,13 @@
 
 #### Features Identified
 
-Food Desert  | No        |  Yes
------------- | --------  | --------:
-Population   | 4285.78   | 4126.080
-
+Feature (Avg)| Food Desert| Not Food Desert
+------------ | ---------  | --------:
+Population   | 4126.080   | 4285.780
+Housing Units| 1529.462   | 1633.400
+Urban (flag) | 0.869 | 0.708
+SNAP Recipients | 335.693 | 150.911
+Poverty Rate | 27.649 | 11.813
 
 
 ![](Assets/Baseline Model.PNG)
