@@ -29,7 +29,7 @@
 - This was accomplished by looking at features within the dataset that did not rely on the mapping and distance calculation work done by the USDA, instead focusing on Socioeconomic and demographic features that would give an understanding of the communities that are described by the data.
 - These features were input into Logistic Regression and Random Forest Classifier Models to determine their significance in predicting whether a given area would be considered a Food Desert by the USDA.
 
-#### Features Identified
+#### Features Identified by Census Tract
 
 Feature (Avg)| Food Desert| Not Food Desert
 ------------ | ---------  | --------:
@@ -38,6 +38,15 @@ Housing Units| 1529.462   | 1633.400
 Urban (flag) | 0.869 | 0.708
 SNAP Recipients | 335.693 | 150.911
 Poverty Rate | 27.649 | 11.813
+HU w/o Vehicle| 182.488 | 129.164
+Kids 0-17| 1035.206 | 1010.613
+Seniors 65+ | 489.514 | 580.176
+Asian pop.  | 130.875 | 232.144
+Black pop.  | 895.898 | 376.575
+Hispanic pop.| 970.795 | 571.520
+White pop.  | 2504.144 | 3314.017
+
+
 
 
 ![](Assets/Baseline Model.PNG)
