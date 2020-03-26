@@ -1,8 +1,7 @@
 # Mapping-Food-Deserts
 
-![alt text][map]
+![alt text][../Assets/FDMAP.PNG "Food Desert Map"]
 
-[map]: "Assets/FDMAP.PNG"
 
 ## Overview and Current Status
 - ML project currently intended to be run in a series of Jupyter Notebooks
