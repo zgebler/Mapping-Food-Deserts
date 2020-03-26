@@ -2,7 +2,7 @@
 
 ![alt text][map]
 
-[map]: "./Assets/FDMAP.PNG"
+[map]: "Assets/FDMAP.PNG"
 
 ## Overview and Current Status
 - ML project currently intended to be run in a series of Jupyter Notebooks
