@@ -1,8 +1,12 @@
 # Mapping-Food-Deserts
 
-## Overview
+## Overview and Current Status
 - ML project currently intended to be run in a series of Jupyter Notebooks
-- 
+- Workflow
+    - 1. Load USDA Data -  reads in CSVs and generates flags for later modeling
+    - 2. Creating US Shapefile  - downloads and unzips Shapefiles from the US census website
+    - 3. Modeling  - uses US census data to determine key features for identifying Food Deserts
+    - 4. Mapping 
 
 ### Background
 "Limited access to supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food may make it harder for some Americans to eat a healthy diet. There are many ways to measure food store access for individuals and for neighborhoods, and many ways to define which areas are food deserts—neighborhoods that lack healthy food sources." - USDA Website
@@ -48,4 +52,12 @@ Black pop.  | 895.898 | 376.575
 Hispanic pop.| 970.795 | 571.520
 White pop.  | 2504.144 | 3314.017
 
+
+#### Model Results
+- Both the Logistic Regression and Random Forest identified Poverty Rate as the most significant predictor of whether a census tract is designated a Food Desert by USDA
+    - USDA defines Poverty Rate as: The share of the tract population living with income at or below the Federal poverty thresholds by family size.
+- Other significant features from the model are:
+    - Urban (> 2,500 people living in a census tract)
+    - TractSNAP (The amount of households currently recieving SNAP benefits)
+    - TractHUNV (The amount of households without access to a vehicle)
 
