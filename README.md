@@ -4,8 +4,9 @@
 
 
 ## Overview and Current Status
-- ML project currently intended to be run in a series of Jupyter Notebooks
-Workflow:
+- ML project currently intended to be run in a series of Jupyter Notebooks.
+
+### Workflow:
 1. Load USDA Data -  reads in CSVs and generates flags for later modeling
 2. Creating US Shapefile  - downloads and unzips Shapefiles from the US census website
 3. Modeling  - uses US census data to determine key features for identifying Food Deserts
