@@ -1,6 +1,6 @@
 # Mapping-Food-Deserts
 
-![Food Desert Map][Assets/FDMAP.PNG]
+![Food Desert Map](Assets/FDMAP.PNG)
 
 
 ## Overview and Current Status
