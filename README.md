@@ -6,10 +6,10 @@
 ## Overview and Current Status
 - ML project currently intended to be run in a series of Jupyter Notebooks
 - Workflow
-    - 1. Load USDA Data -  reads in CSVs and generates flags for later modeling
-    - 2. Creating US Shapefile  - downloads and unzips Shapefiles from the US census website
-    - 3. Modeling  - uses US census data to determine key features for identifying Food Deserts
-    - 4. Mapping 
+    1. Load USDA Data -  reads in CSVs and generates flags for later modeling
+    2. Creating US Shapefile  - downloads and unzips Shapefiles from the US census website
+    3. Modeling  - uses US census data to determine key features for identifying Food Deserts
+    4. Mapping - Currently only using Lat/Lon data to create scatter plots, further work using GeoPandas to create more granular maps of areas of interest
 
 ### Background
 "Limited access to supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food may make it harder for some Americans to eat a healthy diet. There are many ways to measure food store access for individuals and for neighborhoods, and many ways to define which areas are food deserts—neighborhoods that lack healthy food sources." - USDA Website
@@ -63,4 +63,13 @@ White pop.  | 2504.144 | 3314.017
     - Urban (> 2,500 people living in a census tract)
     - TractSNAP (The amount of households currently recieving SNAP benefits)
     - TractHUNV (The amount of households without access to a vehicle)
+    
+## Further Questions
+
+### County Level Data
+- How can we incorporate supply side features (number of available stores, farms, markets, etc,.) into our models?
+### Mapping
+- How can we use shapefiles to get more granular picture of which areas are affected
+### Updating Results
+- How can these models be kept up to date with most current data?
 
