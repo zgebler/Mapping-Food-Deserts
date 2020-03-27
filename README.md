@@ -15,21 +15,21 @@
 ### Background
 "Limited access to supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food may make it harder for some Americans to eat a healthy diet. There are many ways to measure food store access for individuals and for neighborhoods, and many ways to define which areas are food deserts—neighborhoods that lack healthy food sources." - USDA Website
 
-- The USDA Economic Research Service has done a siginificant amount of work, gathering US census data in order to determine where Food Deserts exist in the United States.
+- The USDA Economic Research Service has done a significant amount of work, gathering US census data in order to determine where Food Deserts exist in the United States.
 ### Research Questions
 - This projects aims to address the following questions:
     - Where are these food deserts?
     - What common features do food desert areas share?
     - How can we predict whether an area is a food desert?
-    
+
 ## Data
 
 ### Census Data
-- This project uses the USDA ERS Food Access Research Atlas, which is publically available here:
+- This project uses the USDA ERS Food Access Research Atlas, which is publicly available here:
 - https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/
 
 ### TIGER/line Shapefiles
-- This project also uses TIGER/line shapefiles of US Census tracts, publically available here:
+- This project also uses TIGER/line shapefiles of US Census tracts, publicly available here:
 - https://www2.census.gov/geo/tiger/TIGER2010/TRACT/2010/
 
 ## Modeling
@@ -62,9 +62,9 @@ White pop.  | 2504.144 | 3314.017
     - USDA defines Poverty Rate as: The share of the tract population living with income at or below the Federal poverty thresholds by family size.
 - Other significant features from the model are:
     - Urban (> 2,500 people living in a census tract)
-    - TractSNAP (The amount of households currently recieving SNAP benefits)
+    - TractSNAP (The amount of households currently receiving SNAP benefits)
     - TractHUNV (The amount of households without access to a vehicle)
-    
+
 ## Further Questions
 
 - County Level Data
@@ -73,4 +73,3 @@ White pop.  | 2504.144 | 3314.017
     - How can we use shapefiles to get more granular picture of which areas are affected?
 - Updating Results
     - How can these models be kept up to date with most current data?
-
