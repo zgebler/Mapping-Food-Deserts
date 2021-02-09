@@ -3,14 +3,10 @@
 ![Food Desert Map](Assets/FDMAP.PNG)
 
 
-## Overview and Current Status
-- ML project currently intended to be run in a series of Jupyter Notebooks.
-
-### Workflow:
-1. Load USDA Data -  reads in CSVs and generates flags for later modeling
-2. Creating US Shapefile  - downloads and unzips Shapefiles from the US census website
-3. Modeling  - uses US census data to determine key features for identifying Food Deserts
-4. Mapping - Currently only using Lat/Lon data to create scatter plots, further work using GeoPandas to create more granular maps of areas of interest
+## Mapping US Food System
+- This project is an investigation into the US food system, based on data gathered by the USDA.
+- The USDA Food Access Research Atlas provides an interactive mapping of food access on a county level across the US.
+- My goal for this project was to aggregate the underlying data, analyze and see what conclusions or insights could be drawn from the data.
 
 ### Background
 "Limited access to supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food may make it harder for some Americans to eat a healthy diet. There are many ways to measure food store access for individuals and for neighborhoods, and many ways to define which areas are food deserts—neighborhoods that lack healthy food sources." - USDA Website
@@ -32,13 +28,26 @@
 - This project also uses TIGER/line shapefiles of US Census tracts, publicly available here:
 - https://www2.census.gov/geo/tiger/TIGER2010/TRACT/2010/
 
+### Workflow:
+1. Load USDA Data -  reads in CSVs and generates flags for later modeling
+2. Creating US Shapefile  - downloads and unzips Shapefiles from the US census website
+3. Modeling  - uses US census data to determine key features for identifying Food Deserts
+4. Mapping - Currently only using Lat/Lon data to create scatter plots, further work using GeoPandas to create more granular maps of areas of interest
+
 ## Modeling
 
 ### Food Desert Identification
 - The goal of this project was to simplify the data presented by the USDA, identify the key factors that determine whether an area is classified as a Food Desert.
-- This was accomplished by looking at features within the dataset that did not rely on the mapping and distance calculation work done by the USDA, instead focusing on Socioeconomic and demographic features that would give an understanding of the communities that are described by the data.
-- These features were input into Logistic Regression and Random Forest Classifier Models to determine their significance in predicting whether a given area would be considered a Food Desert by the USDA.
+- This was accomplished by looking at features within the dataset that did not rely on the mapping and distance calculation work done by the USDA, using exogenous features that would give an understanding of the communities that are described by the data.
+- These features were input into Logistic Regression and Random Forest Classifier Models to determine their  statistical significance and utility in predicting whether a given area would be considered a Food Desert by the USDA.
 
+#### Model Results
+- Both the Logistic Regression and Random Forest identified Poverty Rate as the most significant predictor of whether a census tract is designated a Food Desert by USDA
+    - USDA defines Poverty Rate as: The share of the tract population living with income at or below the Federal poverty thresholds by family size.
+- Other significant features from the model are:
+    - Urban (> 2,500 people living in a census tract)
+    - TractSNAP (The amount of households currently receiving SNAP benefits)
+    - TractHUNV (The amount of households without access to a vehicle)
 #### Baseline Model, Features and population statistics
 
 Feature (Avg)| Food Desert| Not Food Desert
@@ -57,13 +66,7 @@ Hispanic pop.| 970.795 | 571.520
 White pop.  | 2504.144 | 3314.017
 
 
-#### Model Results
-- Both the Logistic Regression and Random Forest identified Poverty Rate as the most significant predictor of whether a census tract is designated a Food Desert by USDA
-    - USDA defines Poverty Rate as: The share of the tract population living with income at or below the Federal poverty thresholds by family size.
-- Other significant features from the model are:
-    - Urban (> 2,500 people living in a census tract)
-    - TractSNAP (The amount of households currently receiving SNAP benefits)
-    - TractHUNV (The amount of households without access to a vehicle)
+
 
 ## Further Questions
 
